@@ -9,7 +9,7 @@ class MainContainer extends Component {
       stocks: [],
       myPortfolio: [],
       filter: 'All',
-      sortBy: 'Alpha'
+      sortBy: 'None'
     }
   }
 
@@ -57,8 +57,11 @@ class MainContainer extends Component {
           return -1
         } return 0
       })
-    } else {
+    } else if (sortBy === "Price") {
       return this.filterStocks().sort((a, b) => a.price - b.price)
+    }
+    else {
+      return this.filterStocks()
     }
   }
 

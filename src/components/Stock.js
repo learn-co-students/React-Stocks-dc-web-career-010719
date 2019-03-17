@@ -1,5 +1,6 @@
 import React from 'react'
 
+//render a standard stock card for the stock containers. Left stock undestructured in order to pass it back into the event handler later
 const Stock = ({stock, handleClick}) => (
   <div onClick={() => handleClick(stock)}>
   
