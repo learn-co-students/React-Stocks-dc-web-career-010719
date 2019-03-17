@@ -1,14 +1,13 @@
 import React from 'react'
 
-const Stock = (props) => {
-  console.log(props);
+const PortfolioStock = (props) => {
   //undertand this structure and how it helps reduce repitition
   const {id, ticker, name, type, price} = props.stockObj
 
   return (
     <div>
 
-      <div className="card" onClick={() => props.buySell(props.stockObj)}>
+      <div className="card" onClick={() => props.sell(props.stockObj)}>
         <div className="card-body">
           <h5 className="card-title">{
                 name
@@ -30,4 +29,4 @@ const Stock = (props) => {
   )
 };
 
-export default Stock
+export default PortfolioStock
