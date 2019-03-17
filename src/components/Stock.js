@@ -14,7 +14,6 @@ const Stock = ({stock, handleClick}) => (
       </div>
     </div>
 
-
   </div>
 );
 
