@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Stock = () => (
+const Stock = (props) => (
   <div>
 
-    <div className="card">
+    <div className="card" onClick={()=>props.transferStock(props.data)}>
       <div className="card-body">
         <h5 className="card-title">{
-            //Company Name
+            props.data.name
           }</h5>
         <p className="card-text">{
-            //ticker: stock price
+            `Ticker: ${props.data.price}`
           }</p>
       </div>
     </div>
