@@ -3,6 +3,8 @@ import Header from './components/Header'
 import MainContainer from './containers/MainContainer'
 
 class App extends Component {
+
+  
   render() {
     return (
       <div>
@@ -11,6 +13,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;
