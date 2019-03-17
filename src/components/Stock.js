@@ -2,7 +2,6 @@ import React from 'react'
 
 const Stock = ({stock, handleClick}) => (
 
-
   <div onClick={() => handleClick(stock)}>
   
     <div className="card">

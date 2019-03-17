@@ -7,20 +7,18 @@ const SearchBar = props => {
       <label>
         <input
           type="radio"
-          value="Alphabetically"
+          value="name"
           name="sort"
-          checked={null}
-          onChange={e => props.handleSort(e)}
+          onChange={e => props.handleSort(e.target.value)}
         />
         Alphabetically
       </label>
       <label>
         <input
           type="radio"
-          value="Price"
+          value="price"
           name="sort"
-          checked={null}
-          onChange={e => props.handleSort(e)}
+          onChange={e => props.handleSort(e.target.value)}
         />
         Price
       </label>
