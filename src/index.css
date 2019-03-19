@@ -1,5 +1,5 @@
 h1{
-  padding: 2rem;
+  padding: 1rem 0rem .5rem 0rem;
 }
 
 h2{
@@ -16,4 +16,16 @@ h2{
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+#sort-buttons {
+  padding: 0px 0px 15px 25px;
+}
+
+.sort-button {
+  width: 120px;
+}
+
+#filter-menu {
+  padding-left: 120px;
 }
