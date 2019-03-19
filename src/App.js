@@ -6,7 +6,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      allStocks: []
+      allStocks: [],
+      alphabetically: false,
+      price: false
     };
   }
 
@@ -20,11 +22,16 @@ class App extends Component {
       });
   };
 
+  handleSort = () => {};
+
   render() {
     return (
       <div>
         <Header />
-        <MainContainer allStocks={this.state.allStocks} />
+        <MainContainer
+          handleSort={this.handleSort}
+          allStocks={this.state.allStocks}
+        />
       </div>
     );
   }
