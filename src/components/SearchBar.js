@@ -20,7 +20,7 @@ const SearchBar = props => {
           value="Price"
           name="sort"
           checked={null}
-          onChange={props.handleSort}
+          onChange={e => props.handleSort(e)}
         />
         Price
       </label>
@@ -28,7 +28,7 @@ const SearchBar = props => {
 
       <label>
         <strong>Filter:</strong>
-        <select onChange={null}>
+        <select onChange={e => props.handleFilter(e)}>
           <option value="Tech">Tech</option>
           <option value="Sportswear">Sportswear</option>
           <option value="Finance">Finance</option>
